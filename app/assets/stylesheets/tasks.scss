@@ -29,6 +29,10 @@ label {
   font-weight: lighter;
 }
 
+i {
+  padding-right: 5px;
+}
+
 .form-footer {
   height: 50px;
   background-color: #F4F4F4;
@@ -54,16 +58,31 @@ label {
   margin-bottom: 30px;
 }
 
-.task-list {
-  border-left: 3px solid  #007bff;
+.links {
+  display: flex;
 }
 
-.links {
+.this {
   display: flex;
 }
 
 .check-box {
   height: 30px;
-  width: 30px;
+  max-width: 60px;
+  min-width: 60px;
   border-color: 1px solid #F4F4F4;
+  margin-left: 10px;
+}
+
+.task-list {
+  margin-right: 10px;
+}
+
+.task-details {
+  margin-top: 25px;
+  padding-left: 10px;
+}
+
+.tasks-container {
+  border-left: 3px solid #007bff;
 }

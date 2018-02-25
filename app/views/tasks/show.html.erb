@@ -1,2 +1,22 @@
-<h1>Show</h1>
-<%= link_to "Tasks", tasks_path %>
+<div class="container">
+  <div class="form-container">
+    <div class="offset-md-4 col-md-4 form">
+      <div class="title">
+      <h1><%= @task.title %></h1>
+        <%= link_to task_edit_path(@task) do %>
+          <i class="fa fa-pencil"></i>
+        <% end %>
+      </div>
+      <div class="tasks-container">
+      <div class="task-details">
+        <p><%= @task.details %></p>
+      </div>
+          </div>
+        <%= link_to tasks_path do %>
+          <i class="fa fa-undo"></i>
+        <% end %>
+    </div>
+
+
+  </div>
+</div>
